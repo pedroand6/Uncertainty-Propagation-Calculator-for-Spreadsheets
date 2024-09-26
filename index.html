@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <title>Uncertainty Propagation Calculator For Spreadsheets</title>
+    </head>
+    <body class="container">
+        <div class="mainDiv">
+            
+            <h1>Uncertainty Propagation Calculator For Spreadsheets</h1>
+            <div class="form-container">
+                <form class="form" name="formulario">
+                  <div class="form-group">
+                    <label for="func">Insert your equation:</label>
+                    <input type="text" id="equation" name="func" required="" placeholder="Write your equation like in a Python code, ex: 'x**(1/2)' -> There is no equal sign (=)">
+                    <br>
+                    <label for="vars">Insert your variables:</label>
+                    <input type="text" id="vars" name="vars" required="" placeholder="Variables separeted by comma, ex: 'x, y, ...'">
+                  </div>
+                  <button class="form-submit-btn" type="submit" value="Calcular">Calculate</button>
+                </form>
+            </div>
+            
+            <div class="resultados" id="result">
+                <div class="card">
+                  <p>Result for Spreadsheets</p>
+                  <p id="text"></p>
+                </div>
+                <div class="card">
+                  <p>Result in Latex</p>
+                  <div id="image"></div>
+                </div>
+            </div>
+
+            <script src="lab.js"></script>
+        </div>
+    </body>
+</html>

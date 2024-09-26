@@ -1,0 +1,209 @@
+/*Seção do div principal*/
+.container {
+    min-height: 98.2vh;
+    width: 100%;
+    overflow-x: hidden;
+    --color: #658896;
+    background-image: linear-gradient(white, grey);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:   'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.mainDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .mainDiv{
+        width: 100%;
+    }
+}
+
+h1{
+    color: #323232;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+#image{
+    text-align: center;
+    overflow-x: auto; /* permitir rolagem horizontal */
+    overflow-y: hidden; /* esconder rolagem vertical */
+    padding-bottom: 1%;
+    max-width: 80%;
+    width: 700px;
+}
+
+/*Seção das respostas do formulário*/
+.resultados{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 80%;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  margin-top: 30px;
+
+  border-radius: 60px;
+
+  background: lightgrey;
+  margin-bottom: 20px;
+  border: 0.5px solid #323232;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 60%;
+    }
+}
+
+#text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-wrap: wrap;
+}
+
+p{
+    color: #323232;
+    font-size: 21px;
+}
+
+/*Seção do label do formulário*/
+.form-container {
+    width: 400px;
+    background-color: lightgrey;
+    padding: 32px 24px;
+    font-size: 16px;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  
+@media (max-width: 768px) {
+    .form-container{
+        width: 300px;
+    }
+}
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #323232;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .form-container .form-group input {
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #666;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #fff;
+    border: 3px solid black;
+    margin-bottom: 30px;
+  }
+  
+  .form-container .form-group input::placeholder {
+    font-size: 16px;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: rgb(109, 109, 109);
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: rgb(109, 109, 109);
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-family: inherit;
+    color: black;
+    font-weight: 600;
+    width: 40%;
+    background: #fff;
+    border: 2px solid black;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: rgb(196, 196, 196);
+  }
+
+/* Seção do footer */
+footer{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Espaçamento interno original */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    footer {
+        height: 150px; /* Altura menor para telas menores */
+        padding: 10px; /* Espaçamento interno menor para telas menores */
+    }
+}
+
+/* Media query */
+
+@media (max-width: 40rem) {
+    h1{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+}
