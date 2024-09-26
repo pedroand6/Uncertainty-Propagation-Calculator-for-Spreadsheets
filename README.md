@@ -1,4 +1,4 @@
-# Uncertainty Propagation Calculator
+# Uncertainty Propagation Calculator for Spreadsheets
 
 This project provides an Uncertainty Propagation Calculator, a tool that allows users to input an equation formatted in Python and returns the equation for uncertainty propagation. The result is provided in two formats:
 
